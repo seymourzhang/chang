@@ -1,0 +1,5 @@
+com\chang\fileutil\MD5Util.class
+com\chang\fileutil\CsvUtil.class
+com\chang\fileutil\fileQueue\FileIndex.class
+com\chang\fileutil\fileQueue\FileQueue.class
+com\chang\fileutil\FileUtil.class

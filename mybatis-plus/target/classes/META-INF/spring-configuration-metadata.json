@@ -1,0 +1,90 @@
+{
+  "groups": [
+    {
+      "name": "wg.mybatis.plus.config",
+      "type": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wg.mybatis.plus.config.enable-base-ddl",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    },
+    {
+      "name": "wg.mybatis.plus.config.enable-fill",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    },
+    {
+      "name": "wg.mybatis.plus.config.enable-sql-injector",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    },
+    {
+      "name": "wg.mybatis.plus.config.exclude-tenant-table",
+      "type": "java.lang.String",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    },
+    {
+      "name": "wg.mybatis.plus.config.inner-interceptor-bean-names",
+      "type": "java.lang.String[]",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    },
+    {
+      "name": "wg.mybatis.plus.config.old-page-info",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wg.mybatis.plus.config.open-block-attack",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wg.mybatis.plus.config.open-dynamic-table",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wg.mybatis.plus.config.open-illegal-sql",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wg.mybatis.plus.config.open-optimistic-locker",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wg.mybatis.plus.config.open-page",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "wg.mybatis.plus.config.open-tenant",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "wg.mybatis.plus.config.sql-ddl-paths",
+      "type": "java.lang.String",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties"
+    },
+    {
+      "name": "wg.mybatis.plus.config.tenant-id",
+      "type": "java.lang.String",
+      "sourceType": "com.chang.util.mybatis.config.MybatisPlusProperties",
+      "defaultValue": "tenant_id"
+    }
+  ],
+  "hints": []
+}

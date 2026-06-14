@@ -1,0 +1,13 @@
+com\chang\until\license\license\LicenseManagerHolder.class
+com\chang\until\license\license\LicenseCheckModel.class
+com\chang\until\license\license\Licensefactory.class
+com\chang\until\license\license\LicenseJob.class
+com\chang\until\license\license\AbstractServerInfos.class
+com\chang\until\license\license\CustomKeyStoreParam.class
+com\chang\until\license\license\LicenseVerifyParam.class
+com\chang\until\license\license\LicenseVerify.class
+com\chang\until\license\InitializationWork\CheckStartupRunner.class
+com\chang\until\license\LicenseClient.class
+com\chang\until\license\license\LinuxServerInfos.class
+com\chang\until\license\license\CustomLicenseManager.class
+com\chang\until\license\license\WindowsServerInfos.class

@@ -1,0 +1,3 @@
+com\chang\util\rabbitmqApi\RabbitMQOptions.class
+com\chang\util\rabbitmqApi\RabbitMQFactory.class
+com\chang\util\rabbitmqApi\RabbitMQOptions$RabbitMQOptionsBuilder.class

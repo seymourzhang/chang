@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.chang</groupId>
+    <artifactId>zsnapshot</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>source</module>
+        <module>common</module>
+        <module>excel</module>
+        <module>mybatis-plus</module>
+        <module>design-eda</module>
+        <module>file-util</module>
+        <module>kafka-api</module>
+        <module>mqtt-api</module>
+        <module>web-socket-api</module>
+        <module>jwt</module>
+        <module>source-spring-start</module>
+        <module>until</module>
+        <module>uclass</module>
+        <module>util-license-hide-client</module>
+        <module>time-task-util</module>
+        <module>kafka-plugins</module>
+        <module>mq-component</module>
+        <module>rabbitmq-api</module>
+        <module>spring-util</module>
+        <module>reflect</module>
+        <module>netty-until-api</module>
+        <module>httpclient-until</module>
+        <module>class</module>
+<!--        <module>hbaselib-big-data</module>-->
+        <module>mysql-binlog-api</module>
+        <module>redis-api</module>
+        <module>rocketmq-api</module>
+        <module>thread</module>
+        <module>exception-annotation-start</module>
+        <module>log-annotation-start</module>
+        <module>mqtt-v5-api</module>
+        <!--        <module>authorization</module>-->
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <encoding>UTF-8</encoding>
+        <java.version>17</java.version>
+        <spring.cloud.alibaba.version>2022.0.0.0</spring.cloud.alibaba.version>
+        <spring.boot.version>3.4.7</spring.boot.version>
+        <spring.cloud.version>2023.0.0</spring.cloud.version>
+        <spring.shiro.version>1.4.0</spring.shiro.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <generated.asciidoc.directory>${project.build.directory}/asciidoc</generated.asciidoc.directory>
+        <asciidoctor.html.output.directory>${project.build.directory}/asciidoc/html</asciidoctor.html.output.directory>
+        <asciidoctor.maven.plugin.version>1.5.5</asciidoctor.maven.plugin.version>
+        <asciidoctorj.version>1.5.5</asciidoctorj.version>
+        <jruby.version>1.7.26</jruby.version>
+        <asciidoctorj.pdf.version>1.5.0-alpha.15</asciidoctorj.pdf.version>
+        <dubbo-spring-boot>1.0.0</dubbo-spring-boot>
+        <druid.version>1.2.9</druid.version>
+        <druid.spring.boot.version>1.2.6</druid.spring.boot.version>
+        <mysql.connector.java>8.0.18</mysql.connector.java>
+        <ehcache.version>2.10.3</ehcache.version>
+        <commons.version>3.5</commons.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <swagger.version>2.9.2</swagger.version>
+        <restdocs.version>1.1.2.RELEASE</restdocs.version>
+        <staticdocs.version>2.6.1</staticdocs.version>
+        <maven.jar.plugin.version>2.4</maven.jar.plugin.version>
+        <joda.time.version>2.10.10</joda.time.version>
+        <shiro.spring.version>1.4.0</shiro.spring.version>
+        <hbaseClient.version>1.3.1</hbaseClient.version>
+        <hadoopClient.version>2.7.2</hadoopClient.version>
+        <httpclient.version>4.5.4</httpclient.version>
+        <querydsl.version>4.3.1</querydsl.version>
+        <my.platform.version>1.1.1</my.platform.version>
+        <dubbo.version>3.0.6</dubbo.version>
+        <alibaba.spring.context>1.0.6</alibaba.spring.context>
+        <findbugs.version>3.0.2</findbugs.version>
+        <netty.all.version>4.1.50.Final</netty.all.version>
+        <business.version>1.1.1</business.version>
+        <alluxio.version>1.8.0</alluxio.version>
+        <lombok.version>1.18.20</lombok.version>
+        <influxdb.java.version>2.19</influxdb.java.version>
+        <okio.version>2.3.0</okio.version>
+        <okhttp3.version>4.1.0</okhttp3.version>
+        <spring.data.influxdb.version>1.8</spring.data.influxdb.version>
+        <breeze.version>1.0</breeze.version>
+        <math3.version>3.6.1</math3.version>
+        <mybatis.version>2.2.0</mybatis.version>
+        <pagehelper.version>1.3.0</pagehelper.version>
+        <paho.client.version>1.2.5</paho.client.version>
+        <spring.integration.mqtt.version>5.3.0.RELEASE</spring.integration.mqtt.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <javacsv.version>2.0</javacsv.version>
+        <validation.version>3.1.0</validation.version>
+        <hibernate.validator.version>6.1.6.Final</hibernate.validator.version>
+        <commons.beanutils.version>1.9.4</commons.beanutils.version>
+        <alibaba.sentinel.version>2021.1</alibaba.sentinel.version>
+        <spring.boot.admin>2.2.4</spring.boot.admin>
+        <hutool.version>5.8.21</hutool.version>
+        <io.jsonwebtoken.jjwt.version>0.9.1</io.jsonwebtoken.jjwt.version>
+        <javax.servlet-api.version>6.0.0</javax.servlet-api.version>
+        <mybatis.plus.boot.starter.version>3.5.16</mybatis.plus.boot.starter.version>
+        <activiti.version>7.1.0.M6</activiti.version>
+        <rocketmq.spring.version>2.2.0</rocketmq.spring.version>
+        <reactor.bom.version>2020.0.8</reactor.bom.version>
+        <redisson.version>3.15.6</redisson.version>
+        <shardingsphere.version>4.1.1</shardingsphere.version>
+        <kie.version>7.72.0.Final</kie.version>
+        <flowable.version>6.8.0</flowable.version>
+        <Dm8.version>8.1.1.49</Dm8.version>
+        <chang-plateform.version>2.0.0-SNAPSHOT</chang-plateform.version>
+        <guava.version>33.4.0-jre</guava.version>
+        <swagger.version>2.10.3</swagger.version>
+        <caffeine.version>3.2.1</caffeine.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>kafka-plugins</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>time-task-util</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-bom</artifactId>
+                <version>1.49.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.dameng</groupId>
+                <artifactId>Dm8JdbcDriver18</artifactId>
+                <version>${Dm8.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flowable</groupId>
+                <artifactId>flowable-spring-boot-starter</artifactId>
+                <version>${flowable.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flowable</groupId>
+                <artifactId>flowable-spring-boot-starter-ui-task</artifactId>
+                <version>${flowable.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flowable</groupId>
+                <artifactId>flowable-spring-boot-starter-ui-modeler</artifactId>
+                <version>${flowable.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flowable</groupId>
+                <artifactId>flowable-spring-boot-starter-ui-idm</artifactId>
+                <version>${flowable.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flowable</groupId>
+                <artifactId>flowable-spring-boot-starter-ui-admin</artifactId>
+                <version>${flowable.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.flowable</groupId>
+                <artifactId>flowable-spring-boot-starter-rest</artifactId>
+                <version>${flowable.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.kie</groupId>
+                <artifactId>kie-spring</artifactId>
+                <version>${kie.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.drools</groupId>
+                <artifactId>drools-compiler</artifactId>
+                <version>${kie.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis.plus.boot.starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-jsqlparser</artifactId>
+                <version>${mybatis.plus.boot.starter.version}</version>
+            </dependency>
+
+            <!--<dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis.plus.boot.starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-core</artifactId>
+                <version>${mybatis.plus.boot.starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis.plus.boot.starter.version}</version>
+            </dependency>-->
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-bom</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.eclipse.paho</groupId>
+                <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+                <version>${paho.client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-mqtt</artifactId>
+                <version>${spring.integration.mqtt.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.eclipse.paho</groupId>
+                        <artifactId>mqtt-client</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.alluxio</groupId>
+                <artifactId>alluxio-core-client-fs</artifactId>
+                <version>${alluxio.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.tobato</groupId>
+                <artifactId>fastdfs-client</artifactId>
+                <version>1.27.2</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-validator</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.scalanlp</groupId>
+                <artifactId>breeze_2.11</artifactId>
+                <version>${breeze.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-math3</artifactId>
+                <version>${math3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons.beanutils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>${findbugs.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-registry-nacos</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>0.2.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-api</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty.all.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-sql-spring</artifactId>
+                <version>${querydsl.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-core</artifactId>
+                <version>${querydsl.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-sql</artifactId>
+                <version>${querydsl.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-jpa</artifactId>
+                <version>${querydsl.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-apt</artifactId>
+                <version>${querydsl.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.java}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.spring.boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sf.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${ehcache.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${commons.lang.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons.collections.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-spring-webmvc</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.restdocs</groupId>
+                <artifactId>spring-restdocs-mockmvc</artifactId>
+                <version>${restdocs.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-staticdocs</artifactId>
+                <version>${staticdocs.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${io.jsonwebtoken.jjwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.dubbo.springboot</groupId>
+                <artifactId>spring-boot-starter-dubbo</artifactId>
+                <version>${dubbo-spring-boot}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.influxdb</groupId>
+                <artifactId>influxdb-java</artifactId>
+                <version>${influxdb.java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio</artifactId>
+                <version>${okio.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.miwurster</groupId>
+                <artifactId>spring-data-influxdb</artifactId>
+                <version>${spring.data.influxdb.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sourceforge.javacsv</groupId>
+                <artifactId>javacsv</artifactId>
+                <version>${javacsv.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${validation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+                <version>${alibaba.sentinel.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring.boot.admin}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>${javax.servlet-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq.spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+            </dependency>
+            <!--========================bus=========================-->
+            <!--<dependency>
+                <groupId>com.hxzh.eva.until</groupId>
+                <artifactId>eva-until</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.eva.simplify.until</groupId>
+                <artifactId>eva-simplify-until</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.cache</groupId>
+                <artifactId>hxzh-cache-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mqttv5.until.api</groupId>
+                <artifactId>mqttv5-until-api</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.dct</groupId>
+                <artifactId>hxzh-sping-boot-dct-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.dct</groupId>
+                <artifactId>hxzh-dct-lib</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.hbase.springStart</groupId>
+                <artifactId>hxzh-hbase-springStart</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.hbase.springStart</groupId>
+                <artifactId>hxzh-hbase-huawei-springStart</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mqtt.until.api</groupId>
+                <artifactId>mqtt-until-api</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.source</groupId>
+                <artifactId>hxzh-sping-boot-source-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.source</groupId>
+                <artifactId>hxzh-source</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.flowable</groupId>
+                <artifactId>hxzh-flowable</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.influxDB</groupId>
+                <artifactId>com-hxzh-influxDB</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.rest.api.annotation</groupId>
+                <artifactId>spring-boot-rest-api-annotation-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.alluxiolib</groupId>
+                <artifactId>hxzh-alluxiolib</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.ftpUtil</groupId>
+                <artifactId>hxzh-ftpUtil</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.httpclient.until</groupId>
+                <artifactId>httpclient-until</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.jpa</groupId>
+                <artifactId>com-hxzh-jpa</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.mail</groupId>
+                <artifactId>hxzh-mail-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.redis</groupId>
+                <artifactId>hxzh-redis-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.redis.api</groupId>
+                <artifactId>hxzh-redis-api</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.security</groupId>
+                <artifactId>hxzh-security-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.time</groupId>
+                <artifactId>joda-time-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.uuid</groupId>
+                <artifactId>hxzh-uuid</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.rest.exception.annotation</groupId>
+                <artifactId>spring-boot-exception-annotation-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.log.annotation</groupId>
+                <artifactId>spring-boot-log-annotation-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang.netty.until</groupId>
+                <artifactId>com-hxzh-netty-until</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.algorithm</groupId>
+                <artifactId>hxzh-algorithm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.algorithm.interface</groupId>
+                <artifactId>hxzh-algorithm-interface</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.spring.time.task.util</groupId>
+                <artifactId>hxzh-spring-time-task-util</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.jpa.base</groupId>
+                <artifactId>com-hxzh-jpa-base</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.sqlite</groupId>
+                <artifactId>com-hxzh-sqlite</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mqtt.until.v3</groupId>
+                <artifactId>mqtt-until-v3</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mqtt.until.v3.start</groupId>
+                <artifactId>mqtt-until-v3-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.thread</groupId>
+                <artifactId>hxzh-thread</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.fastdfs</groupId>
+                <artifactId>hxzh-fastdfs</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.rabbit.until</groupId>
+                <artifactId>com-hxzh-rabbit-until</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mongo.jpa</groupId>
+                <artifactId>com-hxzh-mongo-jpa</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.eda</groupId>
+                <artifactId>hxzh-design-eda</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.ebt</groupId>
+                <artifactId>hxzh-design-ebt</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.eventBus</groupId>
+                <artifactId>hxzh-design-eventBus</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.cor</groupId>
+                <artifactId>hxzh-design-cor</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.slotchain</groupId>
+                <artifactId>hxzh-design-slotchain</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.class</groupId>
+                <artifactId>hxzh-class</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.license.service</groupId>
+                <artifactId>util-license-service</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.license.filter</groupId>
+                <artifactId>util-license-hide-filter</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.license.client</groupId>
+                <artifactId>util-license-hide-client</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.dubbo</groupId>
+                <artifactId>util-dubbo-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.rocketmq</groupId>
+                <artifactId>hxzh-rocketmq</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>-->
+
+
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-transaction-xa-core</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-spring-boot-starter</artifactId>
+                <version>1.4.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-transaction-base-seata-at</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+            <!--========================bus=========================-->
+            <!--<dependency>
+                <groupId>com.hxzh.sqlite</groupId>
+                <artifactId>com-hxzh-sqlite-multisource</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.limiter</groupId>
+                <artifactId>hxzh-limiter-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.spi</groupId>
+                <artifactId>util-spi-comm</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hxzh.event</groupId>
+                <artifactId>util-event</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.event.centre</groupId>
+                <artifactId>event-centre-common</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.abstract-document</groupId>
+                <artifactId>hxzh-design-abstract-document</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.sync.client</groupId>
+                <artifactId>sync-client</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.sync.server</groupId>
+                <artifactId>sync-server</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.stream.kafka.input</groupId>
+                <artifactId>com-hxzh-stream-kafka-input</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.stream.kafka.output</groupId>
+                <artifactId>com-hxzh-stream-kafka-output</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.stream.rabbit.input</groupId>
+                <artifactId>com-hxzh-stream-rabbit-input</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.stream.rabbit.input-1</groupId>
+                <artifactId>com-hxzh-stream-rabbit-input-1</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.stream.rabbit.input-2</groupId>
+                <artifactId>com-hxzh-stream-rabbit-input-2</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.stream.rabbit.input-3</groupId>
+                <artifactId>com-hxzh-stream-rabbit-input-3</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.stream.rabbit.output</groupId>
+                <artifactId>com-hxzh-stream-rabbit-output</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mybatis.base</groupId>
+                <artifactId>com-hxzh-mybatis-base</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mybatis.simple</groupId>
+                <artifactId>com-hxzh-mybatis-simple</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.jwt</groupId>
+                <artifactId>hxzh-jwt</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hxzh.wechat</groupId>
+                <artifactId>util-wechat</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.activiti</groupId>
+                <artifactId>hxzh-activiti</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.management.auth</groupId>
+                <artifactId>management-auth</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.management.common</groupId>
+                <artifactId>management-common</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.management.data</groupId>
+                <artifactId>management-data</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.gate.management</groupId>
+                <artifactId>gate-management</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.web.management</groupId>
+                <artifactId>web-management</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.fileUrl.db</groupId>
+                <artifactId>fileUrl-db</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.dictionaries.business</groupId>
+                <artifactId>dictionaries-business</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.fileUrl.service</groupId>
+                <artifactId>fileUrl-service</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.drools.business</groupId>
+                <artifactId>drools-business</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.userLog.business</groupId>
+                <artifactId>userLog-business</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.excel</groupId>
+                <artifactId>com-hxzh-excel</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mysql.binlog</groupId>
+                <artifactId>hxzh-mysql-binlog-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.hxzh.mysql.binlog.api</groupId>
+                <artifactId>hxzh-mysql-binlog-api</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.vmtool</groupId>
+                <artifactId>hxzh-vmtool</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.jvm.look</groupId>
+                <artifactId>hxzh-jvm-look</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.jvm.look.time.task</groupId>
+                <artifactId>hxzh-jvm-look-time-task</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.dynamic</groupId>
+                <artifactId>hxzh-dynamic</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.util.mimio</groupId>
+                <artifactId>minio-springboot-autoconfigure</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.util.mimio</groupId>
+                <artifactId>minio-springboot-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.mybatisPlus.base</groupId>
+                <artifactId>com-hxzh-mybatisPlus-base</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.zookeeper.start</groupId>
+                <artifactId>hxzh-zookeeper-start</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.util.mqttVertx</groupId>
+                <artifactId>mqttVertx</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.util.drools</groupId>
+                <artifactId>drools-springboot-autoconfigure</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.util.drools.tools</groupId>
+                <artifactId>drools-tools</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.design.eventSDK</groupId>
+                <artifactId>hxzh-design-eventSDK</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hxzh.hbase.springStart</groupId>
+                <artifactId>hxzh-hbase-springStart</artifactId>
+                <version>${my.platform.version}</version>
+            </dependency>-->
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>rpc-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>jpa-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>mybatis-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>web-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>sentinel-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>Util-tool-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>spring-cloud-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>spring-boot-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>gate-way-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>swagger-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>activiti-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>activiti6-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>reactor-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>Shardingsphere-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>mybatisPlus-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>modules-import</groupId>
+                <artifactId>webUndertow-pom-depend</artifactId>
+                <version>${my.platform.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>common</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>source</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>source-spring-start</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>file-util</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>reflect</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>util-license-hide-client</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>spring-util</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>uclass</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>netty-until-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang.rabbitmq</groupId>
+                <artifactId>rabbitmq-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>httpclient-until</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>class</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <!--<dependency>
+                <groupId>project.bigData.hbase</groupId>
+                <artifactId>hbaselib-big-data</artifactId>
+                <version>big.data.2.0.0</version>
+            </dependency>-->
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>mysql-binlog-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>redis-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>rocketmq-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>thread</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>exception-annotation-start</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>log-annotation-start</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>kafka-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>web-socket-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>mqtt-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.chang</groupId>
+                <artifactId>mqtt-v5-api</artifactId>
+                <version>${chang-plateform.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--  putao zi  -->
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2483693-release-7nxayM/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2483693-snapshot-N2k7s6/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>rdc-releases</id>-->
+    <!--            <url>https://packages.aliyun.com/maven/repository/2021886-release-efIBGu/</url>-->
+    <!--        </repository>-->
+    <!--        <snapshotRepository>-->
+    <!--            <id>rdc-snapshots</id>-->
+    <!--            <url>https://packages.aliyun.com/maven/repository/2021886-snapshot-H3qwaD/</url>-->
+    <!--        </snapshotRepository>-->
+    <!--    </distributionManagement>-->
+
+    <!--  daQing  -->
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>rdc-releases</id>-->
+    <!--            <url>https://packages.aliyun.com/maven/repository/2075952-release-XCcrul/</url>-->
+    <!--        </repository>-->
+    <!--        <snapshotRepository>-->
+    <!--            <id>rdc-snapshots</id>-->
+    <!--            <url>https://packages.aliyun.com/maven/repository/2075952-snapshot-FyzRB6/</url>-->
+    <!--        </snapshotRepository>-->
+    <!--    </distributionManagement>-->
+
+    <!--     jin xun tong-->
+    <!--            <distributionManagement>-->
+    <!--                <repository>-->
+    <!--                    <id>rdc-releases</id>-->
+    <!--                    <url>https://packages.aliyun.com/maven/repository/2021560-release-aEQ5MN/</url>-->
+    <!--                </repository>-->
+    <!--                <snapshotRepository>-->
+    <!--                    <id>rdc-snapshots</id>-->
+    <!--                    <url>https://packages.aliyun.com/maven/repository/2021560-snapshot-UeIeYI/</url>-->
+    <!--                </snapshotRepository>-->
+    <!--            </distributionManagement>-->
+
+    <!--  yin lian-1      -->
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>private-platform</id>-->
+    <!--            <name>private platform</name>-->
+    <!--            <url>http://192.168.9.105:8081/nexus/content/repositories/private-platform/</url>-->
+    <!--        </repository>-->
+    <!--    </distributionManagement>-->
+
+    <!--  yin lian-2      -->
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>lcmp-release</id>-->
+    <!--            <url>http://192.168.9.98:18081/nexus/repository/lcmp-local/</url>-->
+    <!--        </repository>-->
+    <!--    </distributionManagement>-->
+
+
+    <!--  yin lian-new  -->
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>line-releases</id>-->
+    <!--            <url>http://192.168.9.105:8081/nexus/content/repositories/private-platform</url>-->
+    <!--        </repository>-->
+    <!--        <snapshotRepository>-->
+    <!--            <id>line-snapshots</id>-->
+    <!--            <url>http://192.168.9.105:8081/nexus/content/repositories/snapshots</url>-->
+    <!--        </snapshotRepository>-->
+    <!--    </distributionManagement>-->
+</project>

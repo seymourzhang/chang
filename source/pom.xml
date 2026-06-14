@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.chang</groupId>
+        <artifactId>zsnapshot</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>source</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>mqtt-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>mqtt-v5-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>common</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>kafka-api</artifactId>
+            <version>2.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang.rabbitmq</groupId>
+            <artifactId>rabbitmq-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>rocketmq-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>time-task-util</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.39.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>netty-until-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>spring-util</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>httpclient-until</artifactId>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>com.chang.hbaselib</groupId>
+            <artifactId>hbaselib-big-data</artifactId>
+            <version>big.data.2.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-reload4j</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>3.3.4</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-reload4j</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>web-socket-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>redis-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.chang</groupId>
+            <artifactId>mysql-binlog-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>
